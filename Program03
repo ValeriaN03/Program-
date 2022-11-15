@@ -1,0 +1,52 @@
+1.
+import java.util.Scanner;
+
+public class Program03 {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        int n = 0;
+        do
+        {
+            System.out.println("Введите первое число: ");
+            int num1 = in.nextInt();
+            System.out.println("Введите второе число: ");
+            int num2 = in.nextInt();
+            System.out.printf("%d * %d = %d \n", num1, num2, num1 * num2);
+
+            System.out.println("Для выхода из программы нажмите цифру 1, для подолжения любую другую цифру");
+            n = in.nextInt();
+        }
+        while(n!=1);
+    in.close();
+    }
+}
+3.
+package seven;
+
+public class Program03 {
+
+    public static void main(String[] args) {
+        int count = 0;
+        int temp1 = 0;
+        for (int i = 1; i <= 50000; i++) {
+            int j = i;
+            while (j > 0) {
+               temp1 = j % 10;
+               if (temp1 == 2) {
+                   count++;
+                   j = 0;
+               }
+               j /= 10;
+            }
+        }
+        System.out.println(count);
+    }
+}
+4.
+public class Program03 {
+  public static void main(String[] args) {
+    
+  }
+}
